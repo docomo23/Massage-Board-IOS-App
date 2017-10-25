@@ -1,0 +1,34 @@
+
+package db;
+
+import java.util.List;
+import java.util.Set;
+
+import entity.Post;
+
+
+
+public interface DBConnection {
+  /**
+   * Close the connection.
+   */
+  public void close();
+
+
+  /**
+   * Search items near a geolocation and a term (optional).
+   * 
+   * @param userId
+   * @param lat
+   * @param lon
+   * @param term (Nullable)
+   * @return list of items
+   */
+  public List<Post> loadPost(double lat, double lon);
+  
+  /**
+   * Save item into db.
+   * @param item
+   */
+  public void writePost(Post post);
+}

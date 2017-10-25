@@ -1,0 +1,21 @@
+package entity;
+
+import org.json.JSONObject;
+
+public class Post {
+	private String user;
+	private JSONObject location;
+	private String message;
+	
+	public String getUser() {
+		return user;
+	}
+	
+	public JSONObject getLocation() {
+		return location;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+}

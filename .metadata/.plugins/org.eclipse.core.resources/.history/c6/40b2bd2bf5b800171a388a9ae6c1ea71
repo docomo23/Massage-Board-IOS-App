@@ -1,0 +1,46 @@
+package entity;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+/**
+ * class for holding all the information for a post, and some convenient methods
+ *
+ */
+public class Post {
+	private String user;
+	private JSONObject location;
+	private String message;
+	
+	public Post(	String user, JSONObject location, String message) {
+		this.user = user;
+		this.location = location;
+		this.message = message;
+	}
+	
+	public String getUser() {
+		return user;
+	}
+	
+	public JSONObject getLocation() {
+		return location;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+	
+	public JSONObject toJSONObject() {
+		JSONObject obj = new JSONObject ();	
+		try {
+			obj.put("user", user);
+			obj.put("message", message);
+			obj.put("location", location);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return obj;
+	}
+	
+	
+	
+}
