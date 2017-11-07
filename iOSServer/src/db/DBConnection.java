@@ -1,0 +1,32 @@
+
+package db;
+
+import java.util.List;
+import java.util.Set;
+
+import entity.Post;
+
+
+
+public interface DBConnection {
+  /**
+   * Close the connection.
+   */
+  public void close();
+
+
+  /**
+   * Load posts near a geolocation.
+   * 
+   * @param lat
+   * @param lon
+   * @return list of posts
+   */
+  public List<Post> loadPosts(double lat, double lon, int range);
+  
+  /**
+   * Save post into db.
+   * @param item
+   */
+  public void writePost(Post post);
+}

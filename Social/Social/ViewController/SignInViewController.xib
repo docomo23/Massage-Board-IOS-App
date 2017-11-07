@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController">
+            <connections>
+                <outlet property="nameField" destination="GYX-vf-T0s" id="Ljh-zI-y01"/>
+                <outlet property="passwordField" destination="29e-yP-vSZ" id="QsJ-FD-mHb"/>
+                <outlet property="signInButton" destination="Eds-eC-21t" id="Uol-vg-GIr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GYX-vf-T0s" userLabel="Username Field">
+                    <rect key="frame" x="62.5" y="163.5" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="I3p-9i-Dhi"/>
+                        <constraint firstAttribute="height" constant="40" id="h7O-jg-gkl"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="29e-yP-vSZ" userLabel="Password Field">
+                    <rect key="frame" x="62.5" y="223.5" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dBQ-Ib-aFs"/>
+                        <constraint firstAttribute="width" constant="250" id="mAx-n5-uTx"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-eC-21t">
+                    <rect key="frame" x="62.5" y="313.5" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="RHv-aA-oeh"/>
+                        <constraint firstAttribute="width" constant="250" id="y6M-Ec-MrY"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Eds-eC-21t" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4RS-J2-yeY"/>
+                <constraint firstItem="29e-yP-vSZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-90" id="BOu-fX-wqs"/>
+                <constraint firstItem="Eds-eC-21t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aod-z0-KjZ"/>
+                <constraint firstItem="29e-yP-vSZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dAK-Md-O0L"/>
+                <constraint firstItem="GYX-vf-T0s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="t58-cG-Xzx"/>
+                <constraint firstItem="GYX-vf-T0s" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-150" id="uFV-xk-z26"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-111" y="6"/>
+        </view>
+    </objects>
+</document>
